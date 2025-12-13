@@ -1,5 +1,5 @@
 {
-  "Version": 367,
+  "Version": 369,
   "Assets": [
     {
       "Url": "https://raw.githubusercontent.com/goatcorp/DalamudAssets/master/UIRes/serveropcode.json",
@@ -27,6 +27,11 @@
       "Url": "https://raw.githubusercontent.com/goatcorp/DalamudAssets/master/UIRes/FontAwesomeFreeSolid.otf",
       "FileName": "UIRes/FontAwesomeFreeSolid.otf",
       "Hash": "4860698FEE75A5481CB00C744B7EB297ABDC455D"
+    },
+    {
+      "Url": "https://raw.githubusercontent.com/goatcorp/DalamudAssets/master/UIRes/FontAwesome710FreeSolid.otf",
+      "FileName": "UIRes/FontAwesome710FreeSolid.otf",
+      "Hash": "4E4A7F0BF14D5E30DA71A3B697C2D7919D8FF5C1"
     },
     {
       "Url": "https://raw.githubusercontent.com/goatcorp/DalamudAssets/master/UIRes/Inconsolata-Regular.ttf",
