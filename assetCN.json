@@ -32,11 +32,6 @@
             "Hash": "3AFC19400A6475198503DCC25314BCBCDC03B929"
         },
         {
-            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/sarasa-mono-sc-nerd-regular.ttf",
-            "FileName": "UIRes/sarasa-mono-sc-nerd-regular.ttf",
-            "Hash": "D854DCCE4A454F901EDB8EDCA665C381519819E1"
-        },
-        {
             "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/troubleIcon.png",
             "FileName": "UIRes/troubleIcon.png",
             "Hash": "82F7C168A9C712BFCBADD7CFD49060BBC446A634"
@@ -130,6 +125,11 @@
             "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/updateIcon.png",
             "FileName": "UIRes/updateIcon.png",
             "Hash": "544DA1125ADC03D63610127DC76E1FC5175615D3"
+        },
+        {
+            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/FontAwesome710FreeSolid.otf",
+            "FileName": "UIRes/FontAwesome710FreeSolid.otf",
+            "Hash": "4E4A7F0BF14D5E30DA71A3B697C2D7919D8FF5C1"
         },
         {
             "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/loc/dalamud/dalamud_es.json",
