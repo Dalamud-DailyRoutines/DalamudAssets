@@ -7,6 +7,11 @@
             "Hash": "81185C2BCC5DF0B52B610187EB3B9671C7FB0568"
         },
         {
+            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/badgeAtlas.png",
+            "FileName": "UIRes/badgeAtlas.png",
+            "Hash": "ADA0C94B92ACCBB7FAE799FE500DB986E923A623"
+        },
+        {
             "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/outdatedInstallableIcon.png",
             "FileName": "UIRes/outdatedInstallableIcon.png",
             "Hash": "BA96E817FE8EE2FCC976DEC986973C78BE3A37AE"
@@ -89,7 +94,7 @@
         {
             "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/bannedplugin.json",
             "FileName": "UIRes/bannedplugin.json",
-            "Hash": "1DF26D0719AEA1187C49D40C733FAE437E9C642A"
+            "Hash": "CD64F8CA59341D308CACBCB7CDB2A7BE83A7696F"
         },
         {
             "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/devPluginIcon.png",
