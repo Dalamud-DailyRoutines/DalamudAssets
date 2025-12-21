@@ -52,11 +52,7 @@ def update_assets():
             # 处理文件路径，统一使用正斜杠
             file_path = file_path.replace("\\", "/")
             
-            # 特殊处理 NotoSansCJKsc-Medium.otf 字体
-            if file_path.endswith("NotoSansCJKsc-Medium.otf"):
-                url = "https://mirrors.ustc.edu.cn/CTAN/fonts/notocjksc/NotoSansCJKsc-Medium.otf"
-            else:
-                url = f"{base_url}/{file_path}"
+            url = f"{base_url}/{file_path}"
             
             # 创建资源项
             asset_item = {
