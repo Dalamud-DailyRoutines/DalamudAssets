@@ -102,11 +102,6 @@
             "Hash": "DC33AC5B811D32815BCB4C4261563EFFE532638E"
         },
         {
-            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/clientopcode.json",
-            "FileName": "UIRes/clientopcode.json",
-            "Hash": "DFC1B0814E54B7BEAEE317E437C3EE16207F0A13"
-        },
-        {
             "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/tsmLogo.png",
             "FileName": "UIRes/tsmLogo.png",
             "Hash": "DAC17EE20C63A0CD0C5040A8A900E3CA1B67C5CC"
@@ -115,11 +110,6 @@
             "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/welcome.png",
             "FileName": "UIRes/welcome.png",
             "Hash": "E2383290520BBFCF92893A6043712374ACF44CA5"
-        },
-        {
-            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/serveropcode.json",
-            "FileName": "UIRes/serveropcode.json",
-            "Hash": "3ADA4B06642F5830C3C905E1DD27A8086FDFB6EA"
         },
         {
             "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/Inconsolata-Regular.ttf",
