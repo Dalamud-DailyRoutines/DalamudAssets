@@ -14,7 +14,7 @@
         {
             "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/outdatedInstallableIcon.png",
             "FileName": "UIRes/outdatedInstallableIcon.png",
-            "Hash": "BA96E817FE8EE2FCC976DEC986973C78BE3A37AE"
+            "Hash": "5D3954EECE436D4567179F22C771EFE71425CF0A"
         },
         {
             "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/NotoSansKR-Regular.otf",
@@ -122,84 +122,9 @@
             "Hash": "4E4A7F0BF14D5E30DA71A3B697C2D7919D8FF5C1"
         },
         {
-            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/loc/dalamud/dalamud_es.json",
-            "FileName": "UIRes/loc/dalamud/dalamud_es.json",
-            "Hash": "DDE399AAAADE01484332BB99E78AD8E8D319F191"
-        },
-        {
-            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/loc/dalamud/dalamud_si.json",
-            "FileName": "UIRes/loc/dalamud/dalamud_si.json",
-            "Hash": "D542BBFE7FB0A073879FFFB771AAB098DB9476CB"
-        },
-        {
             "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/loc/dalamud/dalamud_zh.json",
             "FileName": "UIRes/loc/dalamud/dalamud_zh.json",
             "Hash": "44940E0F526CE5A3D31D1DE095250BF6AC26DE74"
-        },
-        {
-            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/loc/dalamud/dalamud_it.json",
-            "FileName": "UIRes/loc/dalamud/dalamud_it.json",
-            "Hash": "7017B0D86C4BDE52BD174734FBA70BF9153857B6"
-        },
-        {
-            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/loc/dalamud/dalamud_fr.json",
-            "FileName": "UIRes/loc/dalamud/dalamud_fr.json",
-            "Hash": "A097143B99721AE888744B4C0031883C74C3BB9F"
-        },
-        {
-            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/loc/dalamud/dalamud_pt.json",
-            "FileName": "UIRes/loc/dalamud/dalamud_pt.json",
-            "Hash": "C9DDDE3097E93B54F2E6EEE1B23B0AB07C5F41E3"
-        },
-        {
-            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/loc/dalamud/dalamud_de.json",
-            "FileName": "UIRes/loc/dalamud/dalamud_de.json",
-            "Hash": "7F16B1FA1E676865F9ED1C02210CEE6977305FF4"
-        },
-        {
-            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/loc/dalamud/dalamud_sv.json",
-            "FileName": "UIRes/loc/dalamud/dalamud_sv.json",
-            "Hash": "AD2804D84F7ED883F6CB6A20D836F69273F67980"
-        },
-        {
-            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/loc/dalamud/dalamud_ko.json",
-            "FileName": "UIRes/loc/dalamud/dalamud_ko.json",
-            "Hash": "DCF22B056009267D937B4115F4EB6B0AF85EAD9D"
-        },
-        {
-            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/loc/dalamud/dalamud_ur.json",
-            "FileName": "UIRes/loc/dalamud/dalamud_ur.json",
-            "Hash": "D542BBFE7FB0A073879FFFB771AAB098DB9476CB"
-        },
-        {
-            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/loc/dalamud/dalamud_no.json",
-            "FileName": "UIRes/loc/dalamud/dalamud_no.json",
-            "Hash": "2272FFAAE4FB6E884EC1F841F85C7BB2B64E544D"
-        },
-        {
-            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/loc/dalamud/dalamud_ja.json",
-            "FileName": "UIRes/loc/dalamud/dalamud_ja.json",
-            "Hash": "FF5F90EBEEF0EAA83AD7B42A31FF103828A6E43D"
-        },
-        {
-            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/loc/dalamud/dalamud_tw.json",
-            "FileName": "UIRes/loc/dalamud/dalamud_tw.json",
-            "Hash": "BE121E08E1AF48056282D92363832993CB9A90DF"
-        },
-        {
-            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/loc/dalamud/dalamud_ru.json",
-            "FileName": "UIRes/loc/dalamud/dalamud_ru.json",
-            "Hash": "DF814C1E5061D96E13A6409288FDD7A2E43A0435"
-        },
-        {
-            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/loc/dalamud/dalamud_nl.json",
-            "FileName": "UIRes/loc/dalamud/dalamud_nl.json",
-            "Hash": "AD6DBDCF48483B03A5E1B56A4B5DDA001600BEE5"
-        },
-        {
-            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/loc/dalamud/dalamud_hu.json",
-            "FileName": "UIRes/loc/dalamud/dalamud_hu.json",
-            "Hash": "EA4928307D7D2FFDD4DBB97B994A14B7EF5E6E12"
         }
     ]
 }
