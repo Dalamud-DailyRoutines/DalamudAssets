@@ -37,6 +37,11 @@
             "Hash": "3AFC19400A6475198503DCC25314BCBCDC03B929"
         },
         {
+            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/NotoSansCJK-Regular.ttc",
+            "FileName": "UIRes/NotoSansCJK-Regular.ttc",
+            "Hash": "41CEE0565517A6A1C7457C687273CF9C00159379"
+        },
+        {
             "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/troubleIcon.png",
             "FileName": "UIRes/troubleIcon.png",
             "Hash": "82F7C168A9C712BFCBADD7CFD49060BBC446A634"
@@ -72,6 +77,11 @@
             "Hash": "16BB14DEF2AD9894C9DA37483A6B0B9AADFCD72D"
         },
         {
+            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/NotoSansCJK-Medium.ttc",
+            "FileName": "UIRes/NotoSansCJK-Medium.ttc",
+            "Hash": "32D8A300209C1F8C2AC5BCA1078AAE26870861B7"
+        },
+        {
             "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/NotoSansCJKjp-Medium.otf",
             "FileName": "UIRes/NotoSansCJKjp-Medium.otf",
             "Hash": "7334F0BADA3A7D52E1C642217EB7EA21BE700421"
@@ -89,7 +99,7 @@
         {
             "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/bannedplugin.json",
             "FileName": "UIRes/bannedplugin.json",
-            "Hash": "CD64F8CA59341D308CACBCB7CDB2A7BE83A7696F"
+            "Hash": "AC375EA56BF3C395AC214FE02CBC869B24A10DC6"
         },
         {
             "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/devPluginIcon.png",
