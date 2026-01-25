@@ -105,7 +105,8 @@
   },
   {
     "Name": "TitleEdit",
-    "AssemblyVersion": "2.2.6.4"
+    "AssemblyVersion": "3.0.6.3",
+    "Reason": "Buffer over-read might cause crashes and other problems."
   },
   {
     "Name": "6F3F2D2BE3F289693A94A582558A88753F809A7DBC9F6061F488174AEA549E9B",
@@ -130,10 +131,6 @@
   {
     "Name": "ARealmRecorded",
     "AssemblyVersion": "0.4.1.0"
-  },
-  {
-    "Name": "Glamaholic",
-    "AssemblyVersion": "1.9.8.0"
   },
   {
     "Name": "Tourist",
@@ -407,7 +404,7 @@
   },
   {
     "Name": "E0BAD217DCA48D9F3E1210B44AE5570DEB174FDAF1774A231F4B29E0F2B0A396",
-    "AssemblyVersion": "1.0.0.13"
+    "AssemblyVersion": "1.0.0.55"
   },
   {
     "Name": "Browsingway",
@@ -431,7 +428,7 @@
   },
   {
     "Name": "NoTankYou",
-    "AssemblyVersion": "7.0.0.3"
+    "AssemblyVersion": "7.3.0.1"
   },
   {
     "Name": "CurrencyAlert",
@@ -556,5 +553,15 @@
     "Name": "OhHey",
     "AssemblyVersion": "0.0.2.0",
     "Reason": "Causes users to crash to desktop under specific circumstances due to UI code."
+  },
+  {
+    "Name": "Glamaholic",
+    "AssemblyVersion": "1.12.0",
+    "Reason": "Potential for invalid/impossible Glamour Plate to be sent to the server."
+  },
+  {
+    "Name": "Altoholic",
+    "AssemblyVersion": "1.4.0",
+    "Reason": "Issue that crash timer and config tabs"
   }
 ]
