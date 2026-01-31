@@ -5,6 +5,16 @@
     "Reason": "Just here for my monthly blacklist... you know the deal by now."
   },
   {
+    "Name": "AcquisitionDate",
+    "AssemblyVersion": "1.1.0.0",
+    "Reason": "Aparently blocks achievements from properly completing :c"
+  },
+  {
+    "Name": "XivFatalFrame",
+    "AssemblyVersion": "1.2.0.0",
+    "Reason": "Aparently blocks achievements from properly completing :c"
+  },
+  {
     "Name": "PingPlugin",
     "AssemblyVersion": "1.11.0.0"
   },
@@ -97,7 +107,7 @@
   },
   {
     "Name": "EB40F8A76F57D9EFD8F751229F0163BE5C64B2E376B329622527A0B04CDAE5E6",
-    "AssemblyVersion": "0.4.0.7"
+    "AssemblyVersion": "0.5.0.21"
   },
   {
     "Name": "RezPls",
@@ -367,7 +377,7 @@
   },
   {
     "Name": "AD93155F9CE43A9475439AF6DC639023A797197EE22A4F3FE3D2F9D0B996DFD9",
-    "AssemblyVersion": "1.5.1.5",
+    "AssemblyVersion": "1.5.1.12",
     "Reason": "Causes Dalamud to hang on launch or crash the game."
   },
   {
@@ -496,7 +506,7 @@
   },
   {
     "Name": "F5F12CDE900C5A90BA2293DF08A84B4C6055768228E6E0F763A27AC3957BDB6B",
-    "AssemblyVersion": "35.0.0.0"
+    "AssemblyVersion": "41.1.0.0"
   },
   {
     "Name": "InventoryTools",
