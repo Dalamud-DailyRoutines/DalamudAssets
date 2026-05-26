@@ -67,3 +67,30 @@ jobs:
               --file "$file" \
               --cache-control 'public, max-age=31536000, immutable'
           done
+
+      - name: Cleanup old versions (keep latest 5)
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          CURRENT=${{ steps.meta.outputs.version }}
+          CUTOFF=$((CURRENT - 5))
+          if [ "$CUTOFF" -lt 1 ]; then
+            echo "Not enough versions to clean (current=$CURRENT)"
+            exit 0
+          fi
+
+          KEYS=$(curl -s "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/r2/buckets/dalamud-distribute/objects?prefix=assets/&limit=1000" \
+            -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" | jq -r '.result.objects[].key')
+
+          for v in $(seq 1 "$CUTOFF"); do
+            PREFIX="assets/$v/"
+            COUNT=$(echo "$KEYS" | grep -c "^$PREFIX" || true)
+            if [ "$COUNT" -gt 0 ]; then
+              echo "Deleting old asset version: $v ($COUNT objects)"
+              echo "$KEYS" | grep "^$PREFIX" | while IFS= read -r key; do
+                npx wrangler r2 object delete "dalamud-distribute/$key" --remote
+              done
+            fi
+          done
+          echo "Cleanup done"
