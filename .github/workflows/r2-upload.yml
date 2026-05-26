@@ -83,7 +83,7 @@ jobs:
           fi
 
           KEYS=$(curl -s "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/r2/buckets/dalamud-distribute/objects?prefix=assets/&limit=1000" \
-            -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" | jq -r '.result.objects[].key')
+            -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" | jq -r '.result[].key')
 
           for v in $(seq 1 "$CUTOFF"); do
             PREFIX="assets/$v/"
