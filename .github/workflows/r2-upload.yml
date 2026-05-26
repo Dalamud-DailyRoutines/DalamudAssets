@@ -34,39 +34,41 @@ jobs:
           fi
           echo "version=$VERSION" >> $GITHUB_OUTPUT
 
-      - name: Upload RELEASE
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-        run: |
-          echo -n "${{ steps.meta.outputs.version }}" > RELEASE
-          npx wrangler r2 object put dalamud-distribute/assets/RELEASE \
-            --remote \
-            --file RELEASE \
-            --cache-control 'public, max-age=300'
+      - name: Install wrangler
+        run: npm install -g wrangler
 
-      - name: Upload assetCN.json
+      - name: Upload metadata
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: |
-          npx wrangler r2 object put "dalamud-distribute/assets/${{ steps.meta.outputs.version }}/assetCN.json" \
-            --remote \
-            --file assetCN.json \
-            --cache-control 'public, max-age=31536000, immutable'
+          retry() { local n=0; until "$@"; do n=$((n+1)); [ $n -ge 3 ] && return 1; echo "Retry $n/3..."; sleep 3; done; }
+          VERSION="${{ steps.meta.outputs.version }}"
+
+          echo -n "$VERSION" > RELEASE
+          retry wrangler r2 object put dalamud-distribute/assets/RELEASE \
+            --remote --file RELEASE --cache-control 'public, max-age=300'
+
+          retry wrangler r2 object put "dalamud-distribute/assets/$VERSION/assetCN.json" \
+            --remote --file assetCN.json --cache-control 'public, max-age=31536000, immutable'
 
       - name: Upload UIRes files
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: |
-          find UIRes -type f | while IFS= read -r file; do
-            echo "Uploading: $file"
-            npx wrangler r2 object put "dalamud-distribute/assets/${{ steps.meta.outputs.version }}/files/${file}" \
-              --remote \
-              --file "$file" \
-              --cache-control 'public, max-age=31536000, immutable'
-          done
+          retry() { local n=0; until "$@"; do n=$((n+1)); [ $n -ge 3 ] && return 1; echo "Retry $n/3..."; sleep 3; done; }
+          VERSION="${{ steps.meta.outputs.version }}"
+
+          upload_file() {
+            local f="$1"
+            retry wrangler r2 object put "dalamud-distribute/assets/$VERSION/files/$f" \
+              --remote --file "$f" --cache-control 'public, max-age=31536000, immutable'
+          }
+          export -f upload_file retry
+          export VERSION CLOUDFLARE_API_TOKEN CLOUDFLARE_ACCOUNT_ID
+
+          find UIRes -type f | xargs -P 4 -I {} bash -c 'upload_file "$@"' _ {}
 
       - name: Cleanup old versions (keep latest 5)
         env:
@@ -89,7 +91,7 @@ jobs:
             if [ "$COUNT" -gt 0 ]; then
               echo "Deleting old asset version: $v ($COUNT objects)"
               echo "$KEYS" | grep "^$PREFIX" | while IFS= read -r key; do
-                npx wrangler r2 object delete "dalamud-distribute/$key" --remote
+                retry wrangler r2 object delete "dalamud-distribute/$key" --remote
               done
             fi
           done
