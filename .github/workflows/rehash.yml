@@ -17,25 +17,26 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: ${{ github.ref }}
-      - name: Bump version if UIRes changed
-        env:
-          BEFORE: ${{ github.event.before }}
-          AFTER: ${{ github.event.after }}
+      - name: Bump version if assets changed
         run: |
-          if [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
-            echo "Initial push, no parent to diff — assuming UIRes changed"
-            CHANGED=true
-          else
-            CHANGED=$(git diff --name-only "$BEFORE" "$AFTER" | grep -q '^UIRes/' && echo true || echo false)
-          fi
+          # 读取旧清单
+          OLD=$(jq -r '.Assets[] | "\(.FileName) \(.Hash)"' assetCN.json 2>/dev/null | sort)
 
-          if [ "$CHANGED" = "true" ]; then
+          # 扫描当前 UIRes 文件并计算 SHA1
+          NEW=""
+          for f in $(find UIRes -type f | sort); do
+            HASH=$(sha1sum "$f" | awk '{print toupper($1)}')
+            NEW="$NEW$f $HASH"$'\n'
+          done
+          NEW=$(echo "$NEW" | sort)
+
+          if [ "$OLD" != "$NEW" ]; then
             VERSION=$(jq -r '.Version' assetCN.json)
             NEW_VERSION=$((VERSION + 1))
             jq --arg v "$NEW_VERSION" '.Version = ($v | tonumber)' assetCN.json > tmp.json && mv tmp.json assetCN.json
-            echo "UIRes changed, version bumped: $VERSION -> $NEW_VERSION"
+            echo "资源文件有变化，version bumped: $VERSION -> $NEW_VERSION"
           else
-            echo "No UIRes changes, version unchanged"
+            echo "资源文件无变化，version 不变"
           fi
 
       - name: Hash assetCN.json
