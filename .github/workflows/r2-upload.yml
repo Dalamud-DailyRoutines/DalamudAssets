@@ -44,6 +44,17 @@ jobs:
             --file assetCN.json \
             --cache-control 'public, max-age=300'
 
+      - name: Create and upload latest.7z
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          7z a -t7z latest.7z UIRes/ -mx=9
+          npx wrangler r2 object put "dalamud-distribute/assets/${{ steps.meta.outputs.version }}/latest.7z" \
+            --remote \
+            --file latest.7z \
+            --cache-control 'public, max-age=31536000, immutable'
+
       - name: Upload UIRes files
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
