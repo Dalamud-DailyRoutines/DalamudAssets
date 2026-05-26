@@ -32,3 +32,9 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
+
+  upload-r2:
+    name: Upload to R2
+    needs: generate
+    uses: ./.github/workflows/r2-upload.yml
+    secrets: inherit
