@@ -1,85 +1,10 @@
 {
-    "Version": 3,
+    "Version": 4,
     "Assets": [
-        {
-            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/defaultIcon.png",
-            "FileName": "UIRes/defaultIcon.png",
-            "Hash": "81185C2BCC5DF0B52B610187EB3B9671C7FB0568"
-        },
-        {
-            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/badgeAtlas.png",
-            "FileName": "UIRes/badgeAtlas.png",
-            "Hash": "ADA0C94B92ACCBB7FAE799FE500DB986E923A623"
-        },
-        {
-            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/outdatedInstallableIcon.png",
-            "FileName": "UIRes/outdatedInstallableIcon.png",
-            "Hash": "5D3954EECE436D4567179F22C771EFE71425CF0A"
-        },
-        {
-            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/NotoSansKR-Regular.otf",
-            "FileName": "UIRes/NotoSansKR-Regular.otf",
-            "Hash": "5F533D0D5CAF3847AFA2D78301E7B87B3485ECBC"
-        },
-        {
-            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/installedIcon.png",
-            "FileName": "UIRes/installedIcon.png",
-            "Hash": "F9A7E334CB719CF36B265A212B3D32A4578429B4"
-        },
-        {
-            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/LodestoneGameSymbol.ttf",
-            "FileName": "UIRes/LodestoneGameSymbol.ttf",
-            "Hash": "89BC6B5015EF0EDFA5AE272B3A406B54CF61C6F1"
-        },
         {
             "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/disabledIcon.png",
             "FileName": "UIRes/disabledIcon.png",
             "Hash": "3AFC19400A6475198503DCC25314BCBCDC03B929"
-        },
-        {
-            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/NotoSansCJK-Regular.ttc",
-            "FileName": "UIRes/NotoSansCJK-Regular.ttc",
-            "Hash": "3DA19A2BF14C0ED93865AF589829D51E77FF950F"
-        },
-        {
-            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/troubleIcon.png",
-            "FileName": "UIRes/troubleIcon.png",
-            "Hash": "82F7C168A9C712BFCBADD7CFD49060BBC446A634"
-        },
-        {
-            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/thirdIcon.png",
-            "FileName": "UIRes/thirdIcon.png",
-            "Hash": "2DFA794867B1ABFEFFF2923FF3C1E06801F9CBC1"
-        },
-        {
-            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/thirdInstalledIcon.png",
-            "FileName": "UIRes/thirdInstalledIcon.png",
-            "Hash": "05E2B4508517646F0FC4E55A821F9A990B2559F7"
-        },
-        {
-            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/gamesym.ttf",
-            "FileName": "UIRes/gamesym.ttf",
-            "Hash": "89BC6B5015EF0EDFA5AE272B3A406B54CF61C6F1"
-        },
-        {
-            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/NotoSansCJKsc-Medium.otf",
-            "FileName": "UIRes/NotoSansCJKsc-Medium.otf",
-            "Hash": "C8AC9E680749BF31536971BC51DB257DDBAF3E68"
-        },
-        {
-            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/logo.png",
-            "FileName": "UIRes/logo.png",
-            "Hash": "0F6323DDFA3665639142252281D22C675D8CD617"
-        },
-        {
-            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/changelogApiBump.png",
-            "FileName": "UIRes/changelogApiBump.png",
-            "Hash": "16BB14DEF2AD9894C9DA37483A6B0B9AADFCD72D"
-        },
-        {
-            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/NotoSansCJK-Medium.ttc",
-            "FileName": "UIRes/NotoSansCJK-Medium.ttc",
-            "Hash": "4FE0139C8031A211FADB8650E6DA5BABFC9F50B0"
         },
         {
             "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/NotoSansCJKjp-Medium.otf",
@@ -87,29 +12,19 @@
             "Hash": "7334F0BADA3A7D52E1C642217EB7EA21BE700421"
         },
         {
-            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/FontAwesomeFreeSolid.otf",
-            "FileName": "UIRes/FontAwesomeFreeSolid.otf",
-            "Hash": "4860698FEE75A5481CB00C744B7EB297ABDC455D"
+            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/updateIcon.png",
+            "FileName": "UIRes/updateIcon.png",
+            "Hash": "544DA1125ADC03D63610127DC76E1FC5175615D3"
         },
         {
-            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/tsmShade.png",
-            "FileName": "UIRes/tsmShade.png",
-            "Hash": "AB7EE2E20955CDC4B98886BE7AEE962A98105D4B"
+            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/outdatedInstallableIcon.png",
+            "FileName": "UIRes/outdatedInstallableIcon.png",
+            "Hash": "5D3954EECE436D4567179F22C771EFE71425CF0A"
         },
         {
-            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/bannedplugin.json",
-            "FileName": "UIRes/bannedplugin.json",
-            "Hash": "CFA90658EEDD76FA183027C432E88A3E7938B6C1"
-        },
-        {
-            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/devPluginIcon.png",
-            "FileName": "UIRes/devPluginIcon.png",
-            "Hash": "DC33AC5B811D32815BCB4C4261563EFFE532638E"
-        },
-        {
-            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/tsmLogo.png",
-            "FileName": "UIRes/tsmLogo.png",
-            "Hash": "DAC17EE20C63A0CD0C5040A8A900E3CA1B67C5CC"
+            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/badgeAtlas.png",
+            "FileName": "UIRes/badgeAtlas.png",
+            "Hash": "ADA0C94B92ACCBB7FAE799FE500DB986E923A623"
         },
         {
             "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/welcome.png",
@@ -117,19 +32,99 @@
             "Hash": "E2383290520BBFCF92893A6043712374ACF44CA5"
         },
         {
-            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/Inconsolata-Regular.ttf",
-            "FileName": "UIRes/Inconsolata-Regular.ttf",
-            "Hash": "FBE9E14427D84CE3F25F4D6A8EF57F527DB5A154"
+            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/thirdIcon.png",
+            "FileName": "UIRes/thirdIcon.png",
+            "Hash": "2DFA794867B1ABFEFFF2923FF3C1E06801F9CBC1"
         },
         {
-            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/updateIcon.png",
-            "FileName": "UIRes/updateIcon.png",
-            "Hash": "544DA1125ADC03D63610127DC76E1FC5175615D3"
+            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/logo.png",
+            "FileName": "UIRes/logo.png",
+            "Hash": "0F6323DDFA3665639142252281D22C675D8CD617"
+        },
+        {
+            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/gamesym.ttf",
+            "FileName": "UIRes/gamesym.ttf",
+            "Hash": "89BC6B5015EF0EDFA5AE272B3A406B54CF61C6F1"
+        },
+        {
+            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/NotoSansCJK-Medium.ttc",
+            "FileName": "UIRes/NotoSansCJK-Medium.ttc",
+            "Hash": "4FE0139C8031A211FADB8650E6DA5BABFC9F50B0"
+        },
+        {
+            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/devPluginIcon.png",
+            "FileName": "UIRes/devPluginIcon.png",
+            "Hash": "DC33AC5B811D32815BCB4C4261563EFFE532638E"
         },
         {
             "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/FontAwesome710FreeSolid.otf",
             "FileName": "UIRes/FontAwesome710FreeSolid.otf",
             "Hash": "4E4A7F0BF14D5E30DA71A3B697C2D7919D8FF5C1"
+        },
+        {
+            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/tsmShade.png",
+            "FileName": "UIRes/tsmShade.png",
+            "Hash": "AB7EE2E20955CDC4B98886BE7AEE962A98105D4B"
+        },
+        {
+            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/Inconsolata-Regular.ttf",
+            "FileName": "UIRes/Inconsolata-Regular.ttf",
+            "Hash": "FBE9E14427D84CE3F25F4D6A8EF57F527DB5A154"
+        },
+        {
+            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/NotoSansCJK-Regular.ttc",
+            "FileName": "UIRes/NotoSansCJK-Regular.ttc",
+            "Hash": "3DA19A2BF14C0ED93865AF589829D51E77FF950F"
+        },
+        {
+            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/installedIcon.png",
+            "FileName": "UIRes/installedIcon.png",
+            "Hash": "F9A7E334CB719CF36B265A212B3D32A4578429B4"
+        },
+        {
+            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/tsmLogo.png",
+            "FileName": "UIRes/tsmLogo.png",
+            "Hash": "DAC17EE20C63A0CD0C5040A8A900E3CA1B67C5CC"
+        },
+        {
+            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/FontAwesomeFreeSolid.otf",
+            "FileName": "UIRes/FontAwesomeFreeSolid.otf",
+            "Hash": "4860698FEE75A5481CB00C744B7EB297ABDC455D"
+        },
+        {
+            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/thirdInstalledIcon.png",
+            "FileName": "UIRes/thirdInstalledIcon.png",
+            "Hash": "05E2B4508517646F0FC4E55A821F9A990B2559F7"
+        },
+        {
+            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/changelogApiBump.png",
+            "FileName": "UIRes/changelogApiBump.png",
+            "Hash": "16BB14DEF2AD9894C9DA37483A6B0B9AADFCD72D"
+        },
+        {
+            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/bannedplugin.json",
+            "FileName": "UIRes/bannedplugin.json",
+            "Hash": "1C69CF3171ACA98F5A2C1A70CFAF8691D7A9B66C"
+        },
+        {
+            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/defaultIcon.png",
+            "FileName": "UIRes/defaultIcon.png",
+            "Hash": "81185C2BCC5DF0B52B610187EB3B9671C7FB0568"
+        },
+        {
+            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/NotoSansKR-Regular.otf",
+            "FileName": "UIRes/NotoSansKR-Regular.otf",
+            "Hash": "5F533D0D5CAF3847AFA2D78301E7B87B3485ECBC"
+        },
+        {
+            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/LodestoneGameSymbol.ttf",
+            "FileName": "UIRes/LodestoneGameSymbol.ttf",
+            "Hash": "89BC6B5015EF0EDFA5AE272B3A406B54CF61C6F1"
+        },
+        {
+            "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/troubleIcon.png",
+            "FileName": "UIRes/troubleIcon.png",
+            "Hash": "82F7C168A9C712BFCBADD7CFD49060BBC446A634"
         },
         {
             "Url": "https://raw.githubusercontent.com/Dalamud-DailyRoutines/DalamudAssets/master/UIRes/loc/dalamud/dalamud_zh.json",
