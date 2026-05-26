@@ -17,7 +17,28 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: ${{ github.ref }}
-      - name: Hash asset.json
+      - name: Bump version if UIRes changed
+        env:
+          BEFORE: ${{ github.event.before }}
+          AFTER: ${{ github.event.after }}
+        run: |
+          if [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
+            echo "Initial push, no parent to diff — assuming UIRes changed"
+            CHANGED=true
+          else
+            CHANGED=$(git diff --name-only "$BEFORE" "$AFTER" | grep -q '^UIRes/' && echo true || echo false)
+          fi
+
+          if [ "$CHANGED" = "true" ]; then
+            VERSION=$(jq -r '.Version' assetCN.json)
+            NEW_VERSION=$((VERSION + 1))
+            jq --arg v "$NEW_VERSION" '.Version = ($v | tonumber)' assetCN.json > tmp.json && mv tmp.json assetCN.json
+            echo "UIRes changed, version bumped: $VERSION -> $NEW_VERSION"
+          else
+            echo "No UIRes changes, version unchanged"
+          fi
+
+      - name: Hash assetCN.json
         run: python hash.py
       - name: Commit files
         continue-on-error: true
