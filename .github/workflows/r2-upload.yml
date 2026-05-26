@@ -4,6 +4,11 @@ on:
     branches: [cn]
   workflow_dispatch:
   workflow_call:
+    inputs:
+      version:
+        description: 'Asset version'
+        type: string
+        required: false
 
 jobs:
   upload:
@@ -17,12 +22,17 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Read version from assetCN.json
+      - name: Determine version
         id: meta
         run: |
-          VERSION=$(jq -r '.Version' assetCN.json)
+          if [ -n "${{ inputs.version }}" ]; then
+            VERSION="${{ inputs.version }}"
+            echo "Version (from caller): $VERSION"
+          else
+            VERSION=$(jq -r '.Version' assetCN.json)
+            echo "Version (from file): $VERSION"
+          fi
           echo "version=$VERSION" >> $GITHUB_OUTPUT
-          echo "Version: $VERSION"
 
       - name: Upload RELEASE
         env:

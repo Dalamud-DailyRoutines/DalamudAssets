@@ -1,14 +1,12 @@
 name: Rehash Assets
-on: 
-  push:
-    branches:
-      - master
-  workflow_dispatch:
+on: workflow_dispatch
 
 jobs:
   generate:
     name: Rehash Assets
     runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.out.outputs.version }}
     steps:
       - uses: actions/setup-python@v2
         with:
@@ -17,19 +15,16 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: ${{ github.ref }}
+
       - name: Bump version if assets changed
         run: |
-          # 读取旧清单
           OLD=$(jq -r '.Assets[] | "\(.FileName) \(.Hash)"' assetCN.json 2>/dev/null | sort)
-
-          # 扫描当前 UIRes 文件并计算 SHA1
           NEW=""
           for f in $(find UIRes -type f | sort); do
             HASH=$(sha1sum "$f" | awk '{print toupper($1)}')
             NEW="$NEW$f $HASH"$'\n'
           done
           NEW=$(echo "$NEW" | sort)
-
           if [ "$OLD" != "$NEW" ]; then
             VERSION=$(jq -r '.Version' assetCN.json)
             NEW_VERSION=$((VERSION + 1))
@@ -41,22 +36,25 @@ jobs:
 
       - name: Hash assetCN.json
         run: python hash.py
-      - name: Commit files
-        continue-on-error: true
+
+      - name: Output version
+        id: out
+        run: |
+          VERSION=$(jq -r '.Version' assetCN.json)
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+
+      - name: Commit and Push
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add .
-          git commit -m "Rehash Assets"
-      - name: Push changes
-        continue-on-error: false
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
+          git commit -m "Rehash Assets" || true
+          git push origin "${{ github.ref }}"
 
   upload-r2:
     name: Upload to R2
     needs: generate
     uses: ./.github/workflows/r2-upload.yml
+    with:
+      version: ${{ needs.generate.outputs.version }}
     secrets: inherit
