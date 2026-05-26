@@ -3,6 +3,7 @@ on:
   push:
     branches: [cn]
   workflow_dispatch:
+  workflow_call:
 
 jobs:
   upload:
