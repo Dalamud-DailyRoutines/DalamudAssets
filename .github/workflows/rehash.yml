@@ -2,7 +2,7 @@ name: Rehash Assets
 on: 
   push:
     branches:
-      - cn
+      - master
   workflow_dispatch:
 
 jobs:
