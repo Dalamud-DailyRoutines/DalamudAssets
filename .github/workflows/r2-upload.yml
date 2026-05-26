@@ -53,7 +53,7 @@ jobs:
           npx wrangler r2 object put "dalamud-distribute/assets/${{ steps.meta.outputs.version }}/assetCN.json" \
             --remote \
             --file assetCN.json \
-            --cache-control 'public, max-age=300'
+            --cache-control 'public, max-age=31536000, immutable'
 
       - name: Upload UIRes files
         env:
