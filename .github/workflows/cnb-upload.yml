@@ -182,7 +182,8 @@ jobs:
 
           upload_asset assetCN.json "assetCN.json"
           while IFS= read -r file; do
-            upload_asset "$file" "files/$file"
+            ENCODED_NAME=$(printf '%s' "$file" | base64 --wrap=0 | tr '+/' '-_' | tr -d '=')
+            upload_asset "$file" "asset-$ENCODED_NAME"
           done < <(jq -r '.Assets[].FileName' assetCN.json)
 
       - name: Cleanup old releases
