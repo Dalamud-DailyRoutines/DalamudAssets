@@ -58,11 +58,3 @@ jobs:
     with:
       version: ${{ needs.generate.outputs.version }}
     secrets: inherit
-
-  upload-cnb:
-    name: Upload to CNB
-    needs: generate
-    uses: ./.github/workflows/cnb-upload.yml
-    with:
-      version: ${{ needs.generate.outputs.version }}
-    secrets: inherit
